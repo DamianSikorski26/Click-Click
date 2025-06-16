@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(202, 248, 248);
+}
+
+.button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(255, 165, 48);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .3s all linear;
+}
+
+.button:hover{
+    background-color: rgb(143, 45, 0);
+    color: white;
+}
+
+#container{
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    position: relative;
+}
+
+#container::after{
+    content: "CLick Click";
+    position: absolute;
+    translate: 0% -86%;
+    top: 0%;
+    right: 0%;
+    font-size: 40px;
+}
+
+.active{
+    background-color: rgb(143, 45, 0);
+    color: white;
+}
